@@ -15,4 +15,9 @@ gulp.task('release:linux', async() => {
 	await build({ publish, ia32: true, linux: allLinuxTargetsButSnap, c: { productName: 'rocketchat' } });
 });
 
+// custom task
+gulp.task('release:linux64', async() => {
+	await build({ publish, x64: true, linux: [], c: { productName: 'hiplounge' } });
+});
+
 gulp.task('release', (cb) => runSequence('build-app', `release:${ process.platform }`, cb));
