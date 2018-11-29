@@ -90,9 +90,9 @@
   },
   "publish": [
     {
-      "provider": "gitlab",
-      "owner": "oesolution",
-      "repo": "rocket.chat.electron",
+      "provider": "github",
+      "owner": "RocketChat",
+      "repo": "Rocket.Chat.Electron",
       "vPrefixedTagName": false
     }
   ]
