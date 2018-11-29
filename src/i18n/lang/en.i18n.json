@@ -44,9 +44,9 @@
     "Learn more": "Learn more",
     "Menu bar": "Menu bar",
     "Message_count": {
-        "zero": "Rocket.Chat: no unread message",
-        "one": "Rocket.Chat: you have %s unread message",
-        "multi": "Rocket.Chat: you have %s unread messages"
+        "zero": "HipLounge: no unread message",
+        "one": "HipLounge: you have %s unread message",
+        "multi": "HipLounge: you have %s unread messages"
     },
     "Minimize": "Minimize",
     "More_spelling_suggestions": "More spelling suggestions",
@@ -84,7 +84,7 @@
     "Tray icon": "Tray icon",
     "&Undo": "&Undo",
     "Update_Available": "Update Available",
-    "Update_Available_message": "A new version of the Rocket.Chat Desktop App is available!",
+    "Update_Available_message": "A new version of the HipLounge Desktop App is available!",
     "Update_Available_New": "New Update is Available",
     "Update_downloading": "Downloading Update",
     "Update_downloading_message": "You will be notified when the update is ready to be installed",

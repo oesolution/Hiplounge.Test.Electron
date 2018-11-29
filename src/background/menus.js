@@ -264,17 +264,18 @@ const createTemplate = ({
 		label: i18n.__('&Help'),
 		role: 'help',
 		submenu: [
-			{
-				label: i18n.__('Documentation'),
-				click: () => events.emit('open-url', 'https://rocket.chat/docs'),
-			},
-			{
-				type: 'separator',
-			},
-			{
-				label: i18n.__('Report issue'),
-				click: () => events.emit('open-url', 'https://github.com/RocketChat/Rocket.Chat.Electron/issues/new'),
-			},
+			// {
+			// 	label: i18n.__('Documentation'),
+			// 	click: () => events.emit('open-url', 'https://rocket.chat/docs'),
+			// },
+			// {
+			// 	type: 'separator',
+			// },
+			// todo set our urls
+			// {
+			// 	label: i18n.__('Report issue'),
+			// 	click: () => events.emit('open-url', 'https://github.com/RocketChat/Rocket.Chat.Electron/issues/new'),
+			// },
 			{
 				label: i18n.__('Reset app data'),
 				click: () => events.emit('reset-app-data'),
@@ -282,10 +283,10 @@ const createTemplate = ({
 			{
 				type: 'separator',
 			},
-			{
-				label: i18n.__('Learn more'),
-				click: () => events.emit('open-url', 'https://rocket.chat'),
-			},
+			// {
+			// 	label: i18n.__('Learn more'),
+			// 	click: () => events.emit('open-url', 'https://rocket.chat'),
+			// },
 			...(process.platform !== 'darwin' ? [
 				{
 					id: 'about',
