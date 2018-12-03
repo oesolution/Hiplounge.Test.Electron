@@ -65,8 +65,8 @@
   },
   "appx": {
     "backgroundColor": "#2f343d",
-    "displayName": "Rocket.Chat",
-    "publisherDisplayName": "Rocket.Chat",
+    "displayName": "HipLounge",
+    "publisherDisplayName": "HipLounge",
     "languages": [
       "en-US",
       "en-GB",
