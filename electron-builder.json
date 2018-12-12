@@ -84,7 +84,7 @@
     "executableName": "hiplounge-desktop",
     "category": "GNOME;GTK;Network;InstantMessaging",
     "desktop": {
-      "StartupWMClass": "Rocket.Chat",
+      "StartupWMClass": "Hip.Lounge",
       "MimeType": "x-scheme-handler/hiplounge"
     }
   },
