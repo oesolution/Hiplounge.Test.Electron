@@ -1,6 +1,6 @@
 !ifndef BUILD_UNINSTALLER
   Function AddToStartup
-    CreateShortCut "$SMSTARTUP\Rocket.Chat.lnk" "$INSTDIR\Rocket.Chat.exe" ""
+    CreateShortCut "$SMSTARTUP\Hip.Lounge.lnk" "$INSTDIR\Hip.Lounge.exe" ""
   FunctionEnd
 
   !define MUI_FINISHPAGE_SHOWREADME
@@ -10,7 +10,7 @@
 
 !ifdef BUILD_UNINSTALLER
   Function un.AddAppData
-    RMDir /r "$APPDATA\Rocket.Chat"
+    RMDir /r "$APPDATA\Hip.Lounge"
   FunctionEnd
 
   ; Using the read me setting to add option to remove app data
@@ -28,12 +28,12 @@
     DeleteRegKey HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\66bed7da-e601-54e6-b2e8-7be611d82556"
   ${EndIf}
   !insertMacro disableAutoUpdates
-  Delete "$SMSTARTUP\Rocket.Chat+.lnk"
+  Delete "$SMSTARTUP\Hip.Lounge+.lnk"
 !macroend
 
 !macro customUnInstall
   ${IfNot} ${Silent}
-    Delete "$SMSTARTUP\Rocket.Chat.lnk"
+    Delete "$SMSTARTUP\Hip.Lounge.lnk"
   ${EndIf}
 !macroend
 

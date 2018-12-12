@@ -9,7 +9,7 @@
   "main": "app/background.js",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/oesolution/rocket.chat.electron"
+    "url": "https://gitlab.com/oesolution/myco/hiplounge/client"
   },
   "scripts": {
     "postinstall": "electron-builder install-app-deps",
