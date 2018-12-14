@@ -22,7 +22,7 @@
     "bundleVersion": "39",
     "helperBundleId": "chat.rocket.electron.helper",
     "type": "distribution",
-    "artifactName": "rocketchat-${version}.${ext}"
+    "artifactName": "hiplounge-${version}.${ext}"
   },
   "dmg": {
     "background": "build/background.png",
@@ -47,7 +47,7 @@
   "mas": {
     "entitlements": "build/entitlements.mas.plist",
     "entitlementsInherit": "build/entitlements.mas.inherit.plist",
-    "artifactName": "rocketchat-${version}-mas.${ext}"
+    "artifactName": "hiplounge-${version}-mas.${ext}"
   },
   "win": {
     "target": [
@@ -61,7 +61,7 @@
     "perMachine": false,
     "allowElevation": true,
     "allowToChangeInstallationDirectory": true,
-    "artifactName": "rocketchat-setup-${version}.${ext}"
+    "artifactName": "hiplounge-setup-${version}.${ext}"
   },
   "appx": {
     "backgroundColor": "#2f343d",
@@ -72,7 +72,7 @@
       "en-GB",
       "pt-BR"
     ],
-    "artifactName": "rocketchat-${version}-${arch}.${ext}"
+    "artifactName": "hiplounge-${version}-${arch}.${ext}"
   },
   "linux": {
     "target": [
@@ -81,11 +81,11 @@
       "rpm",
       "snap"
     ],
-    "executableName": "rocketchat-desktop",
+    "executableName": "hiplounge-desktop",
     "category": "GNOME;GTK;Network;InstantMessaging",
     "desktop": {
-      "StartupWMClass": "Rocket.Chat",
-      "MimeType": "x-scheme-handler/rocketchat"
+      "StartupWMClass": "Hip.Lounge",
+      "MimeType": "x-scheme-handler/hiplounge"
     }
   },
   "publish": [

@@ -3,13 +3,15 @@
   "productName": "HipLounge",
   "description": "HipLounge Native Cross-Platform Desktop Application via Electron.",
   "version": "2.14.1",
-  "copyright": "© 2018",
+  "copyright": "© 2018 HipLounge",
+  "author": "Rocket.Chat Support <support@rocket.chat>",
+  "homepage": "https://intranet.tui-takeoff.de",
   "license": "UNLICENSED",
   "private": true,
   "main": "app/background.js",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/oesolution/rocket.chat.electron"
+    "url": "https://gitlab.com/oesolution/myco/hiplounge/client"
   },
   "scripts": {
     "postinstall": "electron-builder install-app-deps",

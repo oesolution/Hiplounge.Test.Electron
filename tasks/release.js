@@ -11,13 +11,8 @@ gulp.task('release:darwin', () => build({ publish, x64: true, mac: [] }));
 gulp.task('release:win32', () => build({ publish, x64: true, ia32: true, win: ['nsis', 'appx'] }));
 gulp.task('release:linux', async() => {
 	const allLinuxTargetsButSnap = config.linux.target.filter((target) => target !== 'snap');
-	await build({ publish, x64: true, linux: [], c: { productName: 'rocketchat' } });
-	await build({ publish, ia32: true, linux: allLinuxTargetsButSnap, c: { productName: 'rocketchat' } });
-});
-
-// custom task
-gulp.task('release:linux64', async() => {
 	await build({ publish, x64: true, linux: [], c: { productName: 'hiplounge' } });
+	await build({ publish, ia32: true, linux: allLinuxTargetsButSnap, c: { productName: 'hiplounge' } });
 });
 
 gulp.task('release', (cb) => runSequence('build-app', `release:${ process.platform }`, cb));
