@@ -1,6 +1,6 @@
 !ifndef BUILD_UNINSTALLER
   Function AddToStartup
-    CreateShortCut "$SMSTARTUP\Hip.Lounge.lnk" "$INSTDIR\Hip.Lounge.exe" ""
+    CreateShortCut "$SMSTARTUP\HipLounge.lnk" "$INSTDIR\HipLounge.exe" ""
   FunctionEnd
 
   !define MUI_FINISHPAGE_SHOWREADME
@@ -10,7 +10,7 @@
 
 !ifdef BUILD_UNINSTALLER
   Function un.AddAppData
-    RMDir /r "$APPDATA\Hip.Lounge"
+    RMDir /r "$APPDATA\HipLounge"
   FunctionEnd
 
   ; Using the read me setting to add option to remove app data
@@ -28,12 +28,12 @@
     DeleteRegKey HKCU "Software\Microsoft\Windows\CurrentVersion\Uninstall\66bed7da-e601-54e6-b2e8-7be611d82556"
   ${EndIf}
   !insertMacro disableAutoUpdates
-  Delete "$SMSTARTUP\Hip.Lounge+.lnk"
+  Delete "$SMSTARTUP\HipLounge+.lnk"
 !macroend
 
 !macro customUnInstall
   ${IfNot} ${Silent}
-    Delete "$SMSTARTUP\Hip.Lounge.lnk"
+    Delete "$SMSTARTUP\HipLounge.lnk"
   ${EndIf}
 !macroend
 
