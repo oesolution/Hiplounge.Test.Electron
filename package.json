@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "@paulcbetts/system-idle-time": "^1.0.4",
+    "electron-pdf-window": "^1.0.12",
     "electron-updater": "4.0.0",
     "freedesktop-notifications": "^1.2.3",
     "fs-jetpack": "^2.2.0",

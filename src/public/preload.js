@@ -6,6 +6,8 @@ const url = require('url');
 const Notification = require('./lib/Notification');
 const SpellCheck = require('./lib/SpellCheck');
 const i18n = require('../i18n/index');
+const { BrowserWindow } = require('electron').remote;
+const PDFWindow = require('electron-pdf-window');
 
 window.Notification = Notification;
 window.i18n = i18n;
@@ -17,6 +19,11 @@ window.open = ((defaultWindowOpen) => (href, frameName, features) => {
 			'nodeIntegration=true',
 			`preload=${ path.join(__dirname, 'jitsi-preload.js') }`,
 		].filter((x) => Boolean(x)).join(',');
+	}
+	if (RegExp(/.*\.pdf$/).test(href)) {
+		const pdfWindow = new BrowserWindow({ width: 800, height: 600 });
+		PDFWindow.addSupport(pdfWindow);
+		pdfWindow.loadURL(href);
 	}
 
 	return defaultWindowOpen(href, frameName, features);
