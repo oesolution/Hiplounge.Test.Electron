@@ -1,10 +1,10 @@
-<a name="2.14.6-1"></a>
-## 2.14.6-1 (2019-01-15)
+<a name="2.14.7"></a>
+## 2.14.7 (2019-01-09)
 
 
-### Improvements
+### Bug Fixes
 
-- [#1062](https://github.com/RocketChat/Rocket.Chat.Electron/pull/1062) PDF support
+- Main window destroyed when closing on MacOS
 
 
 
@@ -16,6 +16,10 @@
 
 - Add strings specifying why some permissions are needed in MacOS
 - Fix servers.json path resolution
+
+### Improvements
+
+- [#1062](https://github.com/RocketChat/Rocket.Chat.Electron/pull/1062) PDF support
 
 
 
