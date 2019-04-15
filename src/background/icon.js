@@ -29,17 +29,13 @@ const renderInWindow = async(style) => {
 	const create = ({ overlay, template, status, badgeText } = {}) => {
 		const svg = document.querySelector('#icon').cloneNode(true);
 
-		svg.querySelector('.logo .baloon').style.fill = template ? '#FFFFFF' : '#DB2323';
-		svg.querySelector('.logo .circles').style.fill = template ? '#FFFFFF' : '#DB2323';
-		svg.querySelector('.status .away').style.fill = template ? '#FFFFFF' : '#DB2323';
-		svg.querySelector('.status .busy').style.fill = template ? '#FFFFFF' : '#DB2323';
-
-		svg.querySelector('.logo .bubble').style.display = template ? 'none' : null;
+		svg.querySelector('.logo .baloon').style.fill = template ? '#FFFFFF' : '#145a7d';
+		svg.querySelector('.status .away').style.fill = template ? '#FFFFFF' : '#145a7d';
+		svg.querySelector('.status .busy').style.fill = template ? '#FFFFFF' : '#145a7d';
 
 		svg.querySelector('.badge').style.display = (!template && badgeText) ? null : 'none';
 		svg.querySelector('.badge text').innerHTML = badgeText;
 
-		svg.querySelector('.logo .circles').style.display = (template && status && status !== 'online') ? 'none' : '';
 		svg.querySelector('.status circle').style.display = (template || !status) ? 'none' : null;
 		svg.querySelector('.status .away').style.display = (template && status === 'away') ? null : 'none';
 		svg.querySelector('.status .busy').style.display = (template && status === 'busy') ? null : 'none';

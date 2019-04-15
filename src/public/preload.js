@@ -20,11 +20,6 @@ window.open = ((defaultWindowOpen) => (href, frameName, features) => {
 			`preload=${ path.join(__dirname, 'jitsi-preload.js') }`,
 		].filter((x) => Boolean(x)).join(',');
 	}
-	if (RegExp(/.*\.pdf$/).test(href)) {
-		const pdfWindow = new BrowserWindow({ width: 800, height: 600 });
-		PDFWindow.addSupport(pdfWindow);
-		pdfWindow.loadURL(href);
-	}
 
 	return defaultWindowOpen(href, frameName, features);
 })(window.open);
@@ -91,6 +86,16 @@ window.addEventListener('load', () => {
 		}
 
 		const { href } = anchorElement;
+
+		// in 2.15.0 version this code will go to another place
+		const isPdfFile = RegExp(/.*\.pdf$/).test(href) && !anchorElement.hasAttribute('download');
+		if (isPdfFile) {
+			const pdfWindow = new BrowserWindow({ width: 800, height: 600 });
+			PDFWindow.addSupport(pdfWindow);
+			pdfWindow.loadURL(href);
+			event.stopPropagation();
+			return;
+		}
 
 		// Check href matching current domain
 		if (RegExp(`^${ location.protocol }\/\/${ location.host }`).test(href)) {
