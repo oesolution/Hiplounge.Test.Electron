@@ -44,9 +44,9 @@
     "Learn more": "Узнать больше",
     "Menu bar": "Главное меню",
     "Message_count": {
-        "zero": "Rocket.Chat: нет непрочитанных сообщений",
-        "one": "Rocket.Chat: у Вас %s непрочитанное сообщение",
-        "multi": "Rocket.Chat: у Вас %s непрочитанных сообщений"
+        "zero": "HipLounge: нет непрочитанных сообщений",
+        "one": "HipLounge: у Вас %s непрочитанное сообщение",
+        "multi": "HipLounge: у Вас %s непрочитанных сообщений"
     },
     "Minimize": "Свернуть",
     "More_spelling_suggestions": "Другие варианты написания",
