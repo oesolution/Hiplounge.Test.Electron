@@ -96,7 +96,7 @@
     {
       "provider": "github",
       "owner": "oesolution",
-      "repo": "Rocket.Chat.Electron",
+      "repo": "Hiplounge.Test.Electron",
       "vPrefixedTagName": false
     }
   ]
